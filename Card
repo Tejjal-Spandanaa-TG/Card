@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Example</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f2f5;
+            background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1720926000&semt=sph');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .card-custom {
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: white;
+        }
+        .card-custom:hover {
+            transform: scale(1.05);
+        }
+        .card-img-top {
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            border: none;
+            border-radius: 50px;
+            padding: 10px 20px;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card card-custom">
+                    <img src="https://i.pinimg.com/564x/30/95/29/3095295887d6cdbbe920c755eb4fe2df.jpg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Priya</h5>
+                        <p class="card-text">Web Designer</p>
+                        <a href="#" class="btn btn-custom" onclick="cardAction(1)">Mesage</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-custom">
+                    <img src="https://easy-peasy.ai/cdn-cgi/image/quality=80,format=auto,width=700/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/acab0fb8-e4fa-4cb5-8389-1a0cb0cc71e5/45f33f50-2b76-4baa-9dbf-f9d6c56a6fbd.png" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Srini</h5>
+                        <p class="card-text">Ui/Ux Designer</p>
+                        <a href="#" class="btn btn-custom" onclick="cardAction(2)">Message</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-custom">
+                    <img src="https://img.freepik.com/premium-photo/cute-girl-photo-ai-generated_980993-1436.jpg?w=360" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Lakshana</h5>
+                        <p class="card-text">Web Developer</p>
+                        <a href="#" class="btn btn-custom" onclick="cardAction(3)">Message</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function cardAction(cardNumber) {
+            alert('Button clicked on Card ' + cardNumber + '!');
+        }
+    </script>
+</body>
+</html>
